@@ -14,18 +14,10 @@ var middleware={
 
 server.use(middleware.logger);
 server.get('/',function(req,res){
-	res.send('connection OK');
+	res.send('Connection OK');
 });
 server.get('/Trains',middleware.requireAuthentification ,function(req,res){
 	res.send('Morroco Trains');
 })
 server.listen(PORT);
 
-
-//C:\Users\Yassine>git config --global user.name "Yassine Ragnar"
-
-//C:\Users\Yassine>git config --global user.email "yassinemorsaoui@gmail.com"
-
-//C:\Users\Yassine>git config --global push.default matching
-
-//C:\Users\Yassine>git config --global alias.co checkout
